@@ -3,7 +3,7 @@ title: "Understanding Neural Networks: The Core of Modern AI"
 author: "Lixuan Lin"
 date: "2025-01-17"
 categories: [Neural Networks, Machine Learning, AI]
-image: "image.jpg"
+image: "neural-network.png"
 ---
 
 # Introduction
