@@ -11,21 +11,63 @@
     "href": "posts/understanding-neural-networks/index.html",
     "title": "Understanding Neural Networks: The Core of Modern AI",
     "section": "",
-    "text": "Neural networks are the backbone of modern artificial intelligence (AI), enabling breakthroughs in image recognition, natural language processing, and autonomous systems. But what exactly are neural networks, and how do they work? In this blog, we’ll break down the concept of neural networks in simple terms to help a general audience understand their core principles and applications."
+    "text": "Neural networks are the backbone of modern artificial intelligence (AI), enabling breakthroughs in image recognition, natural language processing, and autonomous systems. But what exactly are neural networks, and how do they work? In this blog, we’ll break down the concept of neural networks in simple terms to help you understand their core principles and applications."
   },
   {
-    "objectID": "posts/understanding-neural-networks/index.html#forward-propagation",
-    "href": "posts/understanding-neural-networks/index.html#forward-propagation",
+    "objectID": "posts/understanding-neural-networks/index.html#introduction",
+    "href": "posts/understanding-neural-networks/index.html#introduction",
     "title": "Understanding Neural Networks: The Core of Modern AI",
-    "section": "1. Forward Propagation",
-    "text": "1. Forward Propagation\nData flows through the network from the input layer to the output layer. Each neuron applies a mathematical operation to its input, producing an output.\n\nActivation Functions\nActivation functions introduce non-linearity to the model, enabling it to solve complex problems. Common activation functions include:\n\nReLU (Rectified Linear Unit): Outputs the input directly if positive, otherwise zero.\nSigmoid: Converts inputs into values between 0 and 1.\nTanh: Maps inputs to values between -1 and 1.\n\n# Example of ReLU function in Python\ndef relu(x):\n    return max(0, x)"
+    "section": "",
+    "text": "Neural networks are the backbone of modern artificial intelligence (AI), enabling breakthroughs in image recognition, natural language processing, and autonomous systems. But what exactly are neural networks, and how do they work? In this blog, we’ll break down the concept of neural networks in simple terms to help you understand their core principles and applications."
   },
   {
-    "objectID": "posts/understanding-neural-networks/index.html#backpropagation-and-learning",
-    "href": "posts/understanding-neural-networks/index.html#backpropagation-and-learning",
+    "objectID": "posts/understanding-neural-networks/index.html#what-are-neural-networks",
+    "href": "posts/understanding-neural-networks/index.html#what-are-neural-networks",
     "title": "Understanding Neural Networks: The Core of Modern AI",
-    "section": "2. Backpropagation and Learning",
-    "text": "2. Backpropagation and Learning\nAfter generating an output, the network calculates the error (difference between predicted and actual output). Using an optimization algorithm like gradient descent, it adjusts the weights and biases to minimize this error. This process is called backpropagation.\nAnalogy: Imagine teaching a child to throw a ball into a basket. Each failed attempt helps adjust their technique until they succeed. Similarly, backpropagation adjusts the network’s parameters to improve its accuracy."
+    "section": "What Are Neural Networks?",
+    "text": "What Are Neural Networks?\nA neural network is a computational model inspired by the structure and functioning of the human brain. It consists of interconnected units called neurons, organized into layers:\n\n\n\nLayers in Neural Networks\n\n\n\nInput Layer: Receives the raw data (e.g., an image or a sentence).\nHidden Layers: Perform computations by passing data through neurons using weights and biases.\nOutput Layer: Produces the final result (e.g., classifying an image as a cat or dog).\n\nEach connection between neurons has a weight, which determines the importance of the input, and a bias, which adjusts the output.\nAnalogy: Think of neural networks as a network of decision-makers, where each neuron contributes to the overall decision by processing small pieces of information."
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#how-neural-networks-work",
+    "href": "posts/understanding-neural-networks/index.html#how-neural-networks-work",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "How Neural Networks Work?",
+    "text": "How Neural Networks Work?\nThe functioning of a neural network can be summarized in two key steps:\n\n\n\nNeural Network Workflow\n\n\n\na. Forward Propagation\nData flows through the network from the input layer to the output layer. Each neuron applies a mathematical operation to its input, producing an output.\nActivation functions introduce non-linearity to the model, enabling it to solve complex problems. Common activation functions include:\n\n\n\nActivation Functions\n\n\n\nSigmoid: Converts inputs into values between 0 and 1.\nReLU (Rectified Linear Unit): Outputs the input directly if positive, otherwise zero.\nTanh: Maps inputs to values between -1 and 1.\n\n\n\nb. Backpropagation and Learning\nAfter generating an output, the network calculates the error (difference between predicted and actual output). Using an optimization algorithm like gradient descent, it adjusts the weights and biases to minimize this error. This process is called backpropagation.\nOptimization algorithms like stochastic gradient descent (SGD) or Adam are used to efficiently adjust the network’s parameters. These methods ensure faster and more accurate learning.\nAnalogy: Imagine teaching a child to throw a ball into a basket. Each failed attempt helps adjust their technique until they succeed. Similarly, backpropagation adjusts the network’s parameters to improve its accuracy."
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#applications-of-neural-networks",
+    "href": "posts/understanding-neural-networks/index.html#applications-of-neural-networks",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "Applications of Neural Networks",
+    "text": "Applications of Neural Networks\nNeural networks have transformed industries by solving complex problems. Here are some real-world applications:\n\nImage Recognition: Used in medical diagnostics (e.g., identifying tumors in X-rays) and social media platforms (e.g., facial recognition).\nNatural Language Processing (NLP): Powering chatbots, translation tools, and sentiment analysis.\nAutonomous Vehicles: Enabling self-driving cars to detect objects, understand traffic signs, and make decisions.\nRecommendation Systems: Suggesting products, movies, or songs based on user preferences (e.g., Netflix, Spotify)."
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#advantages-and-limitations",
+    "href": "posts/understanding-neural-networks/index.html#advantages-and-limitations",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "Advantages and Limitations",
+    "text": "Advantages and Limitations\n\na. Advantages\n\nFlexibility: Can model complex, non-linear relationships.\nAdaptability: Capable of learning from large, diverse datasets.\nWide Applications: Useful across various domains like healthcare, finance, and entertainment.\n\n\n\nb. Limitations\n\nComputational Cost: Requires significant computational resources.\nData Dependence: Needs large amounts of labeled data for training.\nInterpretability: Often described as a “black box,” making it hard to understand how decisions are made."
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#case-study-handwritten-digit-recognition",
+    "href": "posts/understanding-neural-networks/index.html#case-study-handwritten-digit-recognition",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "Case Study: Handwritten Digit Recognition",
+    "text": "Case Study: Handwritten Digit Recognition\nOne famous application of neural networks is recognizing handwritten digits using the MNIST dataset. The dataset consists of 70,000 images of handwritten digits (0-9). Neural networks process these images to classify the digits accurately.\n\n\n\nHandwritten Digit Recognition\n\n\nSteps in the process:\n\nData Preprocessing: Images are scaled to a uniform size and normalized.\nModel Training: A neural network learns from the labeled examples.\nPrediction: Given a new image, the network predicts the digit with high accuracy.\n\nThis application demonstrates the power of neural networks in real-world scenarios."
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#conclusion",
+    "href": "posts/understanding-neural-networks/index.html#conclusion",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "Conclusion",
+    "text": "Conclusion\nNeural networks are powerful tools that have revolutionized AI, enabling machines to tackle tasks once thought impossible. By understanding their structure, functionality, and applications, we gain insight into the potential and limitations of this transformative technology.\nAs neural networks continue to evolve, their impact on industries and daily life will only grow. The journey of understanding these models is just the beginning of exploring the vast possibilities of AI.\nThe field of AI is rapidly advancing. Several exciting developments and trends are shaping the future of this technology: self-supervised learning, explainable AI (XAI), federated learning, neurosymbolic AI and so on. You will see introductions of them in the upcoming blogs!"
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#references",
+    "href": "posts/understanding-neural-networks/index.html#references",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "References",
+    "text": "References\n\nIan Goodfellow, Yoshua Bengio, and Aaron Courville. Deep Learning. MIT Press, 2016.\nTowards Data Science. “Understanding Activation Functions in Neural Networks”.\nAndrew Ng. “Introduction to Neural Networks.” Coursera Machine Learning Course.\nMike Gelbart, Tomas Beuzen, Varada Kolhatkar, Prajeet Bajpai, Arman Seyed-Ahmadi, and Aaron Berk. (2025). Supervised Learning II. Available under the Attribution 4.0 International (CC BY 4.0). Retrieved from this link."
   },
   {
     "objectID": "index.html",
