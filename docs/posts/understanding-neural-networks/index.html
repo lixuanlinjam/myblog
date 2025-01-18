@@ -6,10 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Harlow Malloc">
-<meta name="dcterms.date" content="2025-01-16">
+<meta name="author" content="Lixuan Lin">
+<meta name="dcterms.date" content="2025-01-17">
 
-<title>Post With Code – Blog</title>
+<title>Understanding Neural Networks: The Core of Modern AI – Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -115,11 +149,11 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Post With Code</h1>
+      <h1 class="title">Understanding Neural Networks: The Core of Modern AI</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">news</div>
-                <div class="quarto-category">code</div>
-                <div class="quarto-category">analysis</div>
+                <div class="quarto-category">Neural Networks</div>
+                <div class="quarto-category">Machine Learning</div>
+                <div class="quarto-category">AI</div>
               </div>
                   </div>
   </div>
@@ -130,14 +164,14 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Author</div>
       <div class="quarto-title-meta-contents">
-               <p>Harlow Malloc </p>
+               <p>Lixuan Lin </p>
             </div>
     </div>
       
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">January 16, 2025</p>
+        <p class="date">January 17, 2025</p>
       </div>
     </div>
     
@@ -156,9 +190,112 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>This is a post with executable code.</p>
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Neural networks are the backbone of modern artificial intelligence (AI), enabling breakthroughs in image recognition, natural language processing, and autonomous systems. But what exactly are neural networks, and how do they work? In this blog, we’ll break down the concept of neural networks in simple terms to help a general audience understand their core principles and applications.</p>
+</section>
+<section id="what-are-neural-networks" class="level1">
+<h1>What Are Neural Networks?</h1>
+<p>A neural network is a computational model inspired by the structure and functioning of the human brain. It consists of interconnected units called <strong>neurons</strong>, organized into layers:</p>
+<ol type="1">
+<li><strong>Input Layer</strong>: Receives the raw data (e.g., an image or a sentence).</li>
+<li><strong>Hidden Layers</strong>: Perform computations by passing data through neurons using weights and biases.</li>
+<li><strong>Output Layer</strong>: Produces the final result (e.g., classifying an image as a cat or dog).</li>
+</ol>
+<p>Each connection between neurons has a <strong>weight</strong>, which determines the importance of the input, and a <strong>bias</strong>, which adjusts the output.</p>
+<p><strong>Analogy</strong>: Think of neural networks as a network of decision-makers, where each neuron contributes to the overall decision by processing small pieces of information.</p>
+</section>
+<section id="how-neural-networks-work" class="level1">
+<h1>How Neural Networks Work</h1>
+<p>The functioning of a neural network can be summarized in three key steps:</p>
+<section id="forward-propagation" class="level2">
+<h2 class="anchored" data-anchor-id="forward-propagation">1. Forward Propagation</h2>
+<p>Data flows through the network from the input layer to the output layer. Each neuron applies a mathematical operation to its input, producing an output.</p>
+<section id="activation-functions" class="level3">
+<h3 class="anchored" data-anchor-id="activation-functions">Activation Functions</h3>
+<p>Activation functions introduce non-linearity to the model, enabling it to solve complex problems. Common activation functions include:</p>
+<ul>
+<li><strong>ReLU</strong> (Rectified Linear Unit): Outputs the input directly if positive, otherwise zero.</li>
+<li><strong>Sigmoid</strong>: Converts inputs into values between 0 and 1.</li>
+<li><strong>Tanh</strong>: Maps inputs to values between -1 and 1.</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of ReLU function in Python</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> relu(x):</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="bu">max</span>(<span class="dv">0</span>, x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="backpropagation-and-learning" class="level2">
+<h2 class="anchored" data-anchor-id="backpropagation-and-learning">2. Backpropagation and Learning</h2>
+<p>After generating an output, the network calculates the error (difference between predicted and actual output). Using an optimization algorithm like <strong>gradient descent</strong>, it adjusts the weights and biases to minimize this error. This process is called <strong>backpropagation</strong>.</p>
+<p><strong>Analogy</strong>: Imagine teaching a child to throw a ball into a basket. Each failed attempt helps adjust their technique until they succeed. Similarly, backpropagation adjusts the network’s parameters to improve its accuracy.</p>
+</section>
+</section>
+<section id="applications-of-neural-networks" class="level1">
+<h1>Applications of Neural Networks</h1>
+<p>Neural networks have transformed industries by solving complex problems. Here are some real-world applications:</p>
+<ul>
+<li><strong>Image Recognition</strong>: Used in medical diagnostics (e.g., identifying tumors in X-rays) and social media platforms (e.g., facial recognition).</li>
+<li><strong>Natural Language Processing (NLP)</strong>: Powering chatbots, translation tools, and sentiment analysis.</li>
+<li><strong>Autonomous Vehicles</strong>: Enabling self-driving cars to detect objects, understand traffic signs, and make decisions.</li>
+<li><strong>Recommendation Systems</strong>: Suggesting products, movies, or songs based on user preferences (e.g., Netflix, Spotify).</li>
+</ul>
+</section>
+<section id="advantages-and-limitations" class="level1">
+<h1>Advantages and Limitations</h1>
+<section id="advantages" class="level3">
+<h3 class="anchored" data-anchor-id="advantages">Advantages</h3>
+<ul>
+<li><strong>Flexibility</strong>: Can model complex, non-linear relationships.</li>
+<li><strong>Adaptability</strong>: Capable of learning from large, diverse datasets.</li>
+<li><strong>Wide Applications</strong>: Useful across various domains like healthcare, finance, and entertainment.</li>
+</ul>
+</section>
+<section id="limitations" class="level3">
+<h3 class="anchored" data-anchor-id="limitations">Limitations</h3>
+<ul>
+<li><strong>Computational Cost</strong>: Requires significant computational resources.</li>
+<li><strong>Data Dependence</strong>: Needs large amounts of labeled data for training.</li>
+<li><strong>Interpretability</strong>: Often described as a “black box,” making it hard to understand how decisions are made.</li>
+</ul>
+</section>
+</section>
+<section id="visual-aids" class="level1">
+<h1>Visual Aids</h1>
+<p>Below is a simple diagram of a neural network with one hidden layer:</p>
+<pre class="mermaid"><code>graph TD
+    A[Input Layer] --&gt; B1[Hidden Layer Neuron 1]
+    A --&gt; B2[Hidden Layer Neuron 2]
+    B1 --&gt; C[Output Layer]
+    B2 --&gt; C</code></pre>
+<p>Another example is a graph of activation functions like ReLU and Sigmoid, illustrating their behavior:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://via.placeholder.com/600x400?text=Graph+of+ReLU+and+Sigmoid.png" class="img-fluid figure-img"></p>
+<figcaption>Activation Functions</figcaption>
+</figure>
+</div>
+</section>
+<section id="case-study-handwritten-digit-recognition" class="level1">
+<h1>Case Study: Handwritten Digit Recognition</h1>
+<p>One famous application of neural networks is recognizing handwritten digits using the MNIST dataset. The dataset consists of 70,000 images of handwritten digits (0-9). Neural networks process these images to classify the digits accurately.</p>
+<p>Steps in the process: 1. <strong>Data Preprocessing</strong>: Images are scaled to a uniform size and normalized. 2. <strong>Model Training</strong>: A neural network learns from the labeled examples. 3. <strong>Prediction</strong>: Given a new image, the network predicts the digit with high accuracy.</p>
+<p>This application demonstrates the power of neural networks in real-world scenarios.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<p>Neural networks are powerful tools that have revolutionized AI, enabling machines to tackle tasks once thought impossible. By understanding their structure, functionality, and applications, we gain insight into the potential and limitations of this transformative technology.</p>
+<p>As neural networks continue to evolve, their impact on industries and daily life will only grow. The journey of understanding these models is just the beginning of exploring the vast possibilities of AI.</p>
+</section>
+<section id="references" class="level1">
+<h1>References</h1>
+<ol type="1">
+<li>Ian Goodfellow, Yoshua Bengio, and Aaron Courville. <em>Deep Learning</em>. MIT Press, 2016.</li>
+<li>Towards Data Science. “Understanding Activation Functions in Neural Networks.”</li>
+<li>Andrew Ng. “Introduction to Neural Networks.” Coursera Machine Learning Course.</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

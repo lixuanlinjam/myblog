@@ -7,24 +7,31 @@
     "text": "About this blog"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/understanding-neural-networks/index.html",
+    "href": "posts/understanding-neural-networks/index.html",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Neural networks are the backbone of modern artificial intelligence (AI), enabling breakthroughs in image recognition, natural language processing, and autonomous systems. But what exactly are neural networks, and how do they work? In this blog, we’ll break down the concept of neural networks in simple terms to help a general audience understand their core principles and applications."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "objectID": "posts/understanding-neural-networks/index.html#forward-propagation",
+    "href": "posts/understanding-neural-networks/index.html#forward-propagation",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "1. Forward Propagation",
+    "text": "1. Forward Propagation\nData flows through the network from the input layer to the output layer. Each neuron applies a mathematical operation to its input, producing an output.\n\nActivation Functions\nActivation functions introduce non-linearity to the model, enabling it to solve complex problems. Common activation functions include:\n\nReLU (Rectified Linear Unit): Outputs the input directly if positive, otherwise zero.\nSigmoid: Converts inputs into values between 0 and 1.\nTanh: Maps inputs to values between -1 and 1.\n\n# Example of ReLU function in Python\ndef relu(x):\n    return max(0, x)"
+  },
+  {
+    "objectID": "posts/understanding-neural-networks/index.html#backpropagation-and-learning",
+    "href": "posts/understanding-neural-networks/index.html#backpropagation-and-learning",
+    "title": "Understanding Neural Networks: The Core of Modern AI",
+    "section": "2. Backpropagation and Learning",
+    "text": "2. Backpropagation and Learning\nAfter generating an output, the network calculates the error (difference between predicted and actual output). Using an optimization algorithm like gradient descent, it adjusts the weights and biases to minimize this error. This process is called backpropagation.\nAnalogy: Imagine teaching a child to throw a ball into a basket. Each failed attempt helps adjust their technique until they succeed. Similarly, backpropagation adjusts the network’s parameters to improve its accuracy."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Blog",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 16, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 13, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Understanding Neural Networks: The Core of Modern AI\n\n\n\n\n\n\nNeural Networks\n\n\nMachine Learning\n\n\nAI\n\n\n\n\n\n\n\n\n\nJan 17, 2025\n\n\nLixuan Lin\n\n\n\n\n\n\nNo matching items"
   }
 ]
